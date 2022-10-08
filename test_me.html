@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Hello, world! I'm Chelsea.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-safety.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://batstate-u.edu.ph/wp-content/uploads/2020/11/Alangilan-entrance-facade.jpg");
+  min-height: 50%;
+}
+
+.menu {
+  display: none;
+}
+
+.shadhead {
+	font-size: 50px;
+	text-shadow: 2px 2px 1px #000000;
+ }
+ 
+.profile {
+  position:fixed;
+  width:10px;
+  padding:10px;
+  top: 40px;	
+  left: 50px;
+  bottom: -20px;
+}
+
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-safety-red">
+  	<div class="w3-col s3">
+      <div class="w3-dropdown-hover">
+    <button class="w3-button w3-safety-red">Student Portfolio</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#college" class="w3-bar-item w3-button">College</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+    </div>
+    <div class="w3-col" style="width:100px">
+      <a href="#" class="w3-button w3-block w3-safety-red">HOME</a>
+    </div>
+    <div class="w3-col" style="width:100px">
+      <a href="#about" class="w3-button w3-block w3-safety-red">ABOUT</a>
+    </div>
+    <div class="w3-col" style="width:150px">
+      <a href="#college" class="w3-button w3-block w3-safety-red">COLLEGE</a>
+    </div>
+    <div class="w3-col" style="width:120px">
+      <a href="#contact" class="w3-button w3-block w3-safety-red">CONTACT</a>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomright w3-right-align w3-padding-large">
+    <span class="w3-tag w3-round">BS Information Technology Student</span>
+    <p>
+    <span class="w3-tag w3-round">Service Management</span>
+    </p>
+  </div>
+  <img src="MYPROFILE.png" style="width:20%;" class="profile">
+  <div class="shadhead w3-display-middle w3-left-align">
+    <span class="w3-text-white">Chelsea Claire<br>Daquis</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-light-grey w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container w3-center" style="padding:32px 16px" id="about">
+	<br>
+  <h5 class="w3-tag w3-round">KNOW SOMETHING ABOUT ME</h5></br>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Languages</p>
+      <p>I took up courses that require programming. I have utilized C++, Java, Python and currently using W3Schools for HTML and CSS for web development.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">What I Love</p>
+      <p>Some of the hobbies that I learned while making use of digital technology is video and image editing. I also enjoy listening to K-pop music and presently delving into band music.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Future</p>
+      <p>I want to pursue a career that will help me develop my skills and discover more while I appreciate my work.</p>
+    </div>
+   </div>
+</div>
+    <div class="w3-container w3-left">
+	<div class="w3-panel w3-leftbar w3-light-grey">
+  	<span style="font-size:150px;line-height:0.6em;opacity:0.2">&#10077;</span>
+	<p class="w3-xlarge" style="margin-top:-40px"><i>A good programmer is someone who always looks both ways before crossing a one-way street.&#10078;</i></p>
+   	<a href="https://www.defprogramming.com/quotes-by/doug-linder/#:~:text=A%20good%20programmer%20is%20someone,crossing%20a%20one%2Dway%20street." target="_blank" class="w3-hover-text-red"><i>Doug Linder</i></a> 
+    </div>
+    </div>
+
+
+<!-- College Container -->
+<div class="w3-container" id="college">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-round">COLLEGE</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openCollege(event, 'Freshman');" id="myLink">
+        <div class="w3-col s4 tablink">Freshman</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openCollege(event, 'Sophomore');">
+        <div class="w3-col s4 tablink">Sophomore</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openCollege(event, 'Junior');">
+        <div class="w3-col s4 tablink">Junior</div>
+      </a>
+    </div>
+
+    <div id="Freshman" class="w3-container educ w3-padding-48 w3-card">
+    <ul style="list-style-type:circle;">
+    <li>Print by the Minute HTML Site </li>
+     <dd class="w3-text-grey">My first project is an HTML site for a specific imagined business that can be started at home. I proposed a smart and practical choice, a printing business. </dd>
+     <dd>Course: Introduction to Computing</dd>
+     <dd>Language: HTML, CSS (Markup)</dd>
+     <br>
+     <li>CHILD – Children’s Healthcare Information Listing and appointment for Doctors</li>
+     <dd class="w3-text-grey"> An appointment system solely created for a pediatric clinic. </dd>
+     <dd> Course: Computer Programming</dd>
+     <dd> Language: C++</dd>
+      <br>
+     <li>Pharmacy Billing, Management and Inventory System</li>
+     <dd class="w3-text-grey"> A system based on a concept of taking medicine orders with
+payments and the provision of sales invoice to the customers. Sellers, on their end, are able to handle daily sales and manage the inventory. </dd>
+     <dd> Course: Data Structures and Algorithms</dd>
+     <dd> Language: C++</dd>
+     </ul>
+     </br>
+    </div>
+    <div id="Sophomore" class="w3-container educ w3-padding-48 w3-card">
+  <ul style="list-style-type:circle;">
+    <li>Angel's Cabin</li>
+     <dd class="w3-text-grey">A database connection to Python GUI</dd>
+     <dd> Course: Advanced Computer Programming</dd>
+     <dd> Language: Python</dd>
+     <br>
+     <li>MARS Pharmacy Sales and Inventory Management System</li>
+     <dd class="w3-text-grey"> A system handling the management of the pharmacy billing, together with the inventory for cashier/s and administrator. </dd>
+     <dd> Course: Object-Oriented Programming</dd>
+     <dd> Language: Java</dd>
+     <br>
+     <li>Beaute Naturelle</li>
+     <dd class="w3-text-grey"> A clothing line management system incorporating MS Access and programming to create a functional and responsive GUI.</dd>
+     <dd> Course: Advanced Database Management System</dd>
+     <dd> Language: SQL, Python</dd>
+    </div>
+    <div id="Junior" class="w3-container educ w3-padding-48 w3-card">
+    <ul style="list-style-type:circle;">
+    <li>Batangas State University</li>
+     <dd> S.Y. 2020-present</dd>
+    </div>
+</div>
+ 
+<!-- Contact/Area Container -->
+<div class="w3-container" id="contact" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-round">CONTACT</span></h5>
+    <p><span class="w3-tag">FYI!</span> Do you have a question in mind? Fill in with your details so we can keep in touch! </p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email Address"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Inquiry" required name="Message"></p>
+      <p><button class="w3-button w3-black w3-round" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+<div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+<script>
+// Tabbed College
+function openCollege(evt, educName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("educ");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+  }
+  document.getElementById(educName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-red";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
